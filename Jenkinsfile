@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-pipeline {
+pipeline{
     agent {
         docker {
             image 'python:3-alpine' 
