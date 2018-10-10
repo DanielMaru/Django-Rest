@@ -1,15 +1,15 @@
 #!/usr/bin/env groovy
-pipeline{
+pipeline {
     agent {
         docker {
-            image 'python:3-alpine' 
+            image 'node:6-alpine' 
             args '-p 3000:3000' 
         }
     }
     stages {
         stage('Build') { 
             steps {
-                sh 'pip' 
+                sh 'npm install' 
             }
         }
     }
