@@ -1,1 +1,1 @@
-python manage.py test
+sudo python manage.py test
