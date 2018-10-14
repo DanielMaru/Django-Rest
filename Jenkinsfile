@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'python -m pip' 
+                sh 'python -m pip install djangorestframework 
             }
         }
         stage('Test') { 
