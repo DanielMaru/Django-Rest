@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'python:3-alpine' 
+            image 'django' 
             args '-p 3000:3000' 
         }
     }
