@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'pip' 
+                sh 'python -m pip' 
             }
         }
         stage('Test') { 
