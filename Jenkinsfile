@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'django' 
+            image 'kstromeiraos/django-rest-framework' 
             args '-p 3000:3000' 
         }
     }
